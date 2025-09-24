@@ -5,7 +5,7 @@ import "./home.css";
 import Header from "../../component/header/header.jsx";
 import Exploremenu from "../../component/exploremenu/Exploremenu.jsx";
 import Fooddisplay from "../../component/fooddisplay/Fooddisplay.jsx";
-import Appdowload from "../../component/appdowload/appdowload.jsx";
+import Appdowload from "../../component/appdowload/Appdowload.jsx";
 import Footer from "../../component/footer/footer.jsx";
 
 // Home Page Exclusive Components
@@ -49,3 +49,4 @@ const Home = () => {
 };
 
 export default Home;
+
