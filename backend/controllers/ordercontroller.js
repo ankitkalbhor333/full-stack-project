@@ -7,7 +7,7 @@ import Stripe from "stripe";
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 export const placeorder = async (req, res) => {
-  const frontend_url = "http://localhost:5173";
+  const frontend_url = "https://food-dev-front.onrender.com";
   try {
     const neworder = new orderModel({
       userId: req.body.userId,
@@ -99,4 +99,5 @@ try{
   console.log(error);
   res.json({success:false,message:"Error updating order status"})
 }
+
 }
