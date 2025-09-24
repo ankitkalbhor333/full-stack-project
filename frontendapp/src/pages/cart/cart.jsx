@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { StoreContext } from "../../context/storecontext";
+import { StoreContext } from "../../context/StoreContext";
 import { useNavigate } from "react-router-dom";
 import "./cart.css";
 
@@ -95,3 +95,4 @@ const Cart = () => {
 };
 
 export default Cart;
+
