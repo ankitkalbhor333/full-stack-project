@@ -9,7 +9,7 @@ const StoreContextProvider = ({ children }) => {
   // initialize token immediately from localStorage
   const [token, setToken] = useState(() => localStorage.getItem("token") || "");
   const [food_list, setFoodList] = useState([]);
-  const url = "http://localhost:3000";
+  const url = "https://food-dev-backend-5umy.onrender.com";
 
   // Add item to cart (frontend state + backend)
   const addToCart = async (itemId) => {
@@ -101,3 +101,4 @@ const StoreContextProvider = ({ children }) => {
 };
 
 export default StoreContextProvider;
+
