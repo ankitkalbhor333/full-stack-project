@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import axios from "axios";
 import { assets } from "../../assets/asset.js";
-import "./loginpopup.css";
+import "./Loginpopup.css";
 import { StoreContext } from "../../context/StoreContext.jsx";
 import { useNavigate } from "react-router-dom";
 
@@ -135,3 +135,4 @@ const Loginpopup = ({ setShowLogin }) => {
 };
 
 export default Loginpopup;
+
