@@ -3,6 +3,7 @@ import foodModel from "../models/foodModel.js";
 
 import fs from "fs";
 const addFood=async (req,res)=>{
+   const backendUrl = "http://localhost:3000";
   console.log(req.body);
 let image_filename = req.file ? req.file.filename : "";
 const food=new foodModel({
@@ -11,7 +12,7 @@ const food=new foodModel({
   description:req.body.description,
   price:Number(req.body.price),
   category:req.body.category,
- image: `${req.protocol}://${req.get("host")}/images/${image_filename}`
+  image:`${backendUrl}/images/${image_filename}`
 
 })
 try{
@@ -67,4 +68,5 @@ const removeFood = async (req, res) => {
 };
 
 // food list
+
 export {addFood,listFood,removeFood}
