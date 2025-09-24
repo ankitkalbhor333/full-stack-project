@@ -8,7 +8,7 @@ import Loginpopup from "./component/LoginPopup/Loginpopup.jsx";
 
 // Pages
 import Home from "./pages/home/home.jsx";
-import Cart from "./pages/cart/Cart.jsx";
+import Cart from "./pages/cart/cart.jsx";
 import Placeorder from "./pages/placeorder/placeorder.jsx";
 import Exploremenu from "./component/exploremenu/Exploremenu.jsx";
 import SearchFood from "./component/navbar/SearchFood.jsx";
