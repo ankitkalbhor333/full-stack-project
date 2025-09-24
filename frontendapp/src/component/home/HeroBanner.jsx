@@ -1,5 +1,5 @@
 import React from "react";
-import "./herobanner.css";
+import "./HeroBanner.css";
 
 const HeroBanner = () => {
   return (
@@ -19,3 +19,4 @@ const HeroBanner = () => {
 };
 
 export default HeroBanner;
+
