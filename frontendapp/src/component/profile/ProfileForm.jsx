@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./profileform.css";
+import "./ProfileForm.css";
 
 const ProfileForm = () => {
   // Load saved profile from localStorage or use empty defaults
@@ -114,3 +114,4 @@ const ProfileForm = () => {
 };
 
 export default ProfileForm;
+
