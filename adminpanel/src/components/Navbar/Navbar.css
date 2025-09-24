@@ -1,0 +1,38 @@
+.navbar {
+  height: 10vh;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+}
+
+.logo {
+  height: 45px;
+}
+
+.admin-panel {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  flex: 1; /* pushes title to center */
+}
+
+.profile {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  cursor: pointer;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+  }
+}

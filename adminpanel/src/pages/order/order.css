@@ -1,0 +1,95 @@
+.order-list {
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+table th, table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.status-chip {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  color: #fff;
+}
+.status-chip.pending { background: orange; }
+.status-chip.completed { background: green; }
+.status-chip.cancelled { background: red; }
+
+button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #007bff;
+  color: white;
+  transition: 0.2s;
+}
+button:hover {
+  background: #0056b3;
+}
+
+/* Modal */
+.order-details-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-details-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  border: none;
+  background: red;
+  color: white;
+  font-size: 1rem;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.order-item {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.order-item img {
+  width: 70px;
+  height: 70px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.details-section {
+  margin-top: 15px;
+}
+.details-section h4 {
+  margin-bottom: 8px;
+  color: #333;
+}

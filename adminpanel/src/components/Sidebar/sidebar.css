@@ -1,0 +1,67 @@
+.sidebar {
+  width: 18%;
+  min-height: 100vh;
+  background-color: #fff;
+  border-right: 1px solid #ccc;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  left: 0;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+}
+
+.sidebar-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.sidebar-option img {
+  width: 22px;
+  height: 22px;
+}
+
+.sidebar-option p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Hover + Active states */
+.sidebar-option:hover {
+  background-color: #f3f3f3;
+}
+
+.sidebar-option.active {
+  background-color: #e20c0c;
+}
+
+.sidebar-option.active p {
+  color: #fff;
+}
+.sidebar-option.active  {
+  background-color: #f7a1a1ff;
+  transition: all 0.3s ease-in-out;
+}
+/* 🔹 Media Query: Hide text on small screens */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 70px;  /* shrink sidebar */
+    padding: 20px 5px;
+  }
+
+  .sidebar-option p {
+    display: none; /* hide labels */
+  }
+
+  .sidebar-option {
+    justify-content: center; /* center icons */
+    padding: 14px 0;
+  }
+}

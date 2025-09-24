@@ -1,0 +1,108 @@
+/* add.css */
+
+/* Common utility */
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Main container */
+.add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background: #f9f9f9;
+  min-height: 80vh;
+  margin-left:20%;
+}
+
+/* Form box */
+.add form {
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Headings / labels */
+.add p {
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+/* Image upload */
+.add-img-upload {
+  align-items: center;
+  text-align: center;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.add-img-upload:hover {
+  border-color: #007bff;
+}
+
+.add-img-upload img {
+  width: 200px;
+  height: 100px;
+  object-fit: contain;
+  opacity: .9;
+}
+
+/* Inputs & textarea */
+.add input[type="text"],
+.add input[type="number"],
+.add textarea,
+.add select {
+  padding: 10px;
+  border: 1px solid #171616ff;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+  transition: border 0.2s;
+}
+
+.add input:focus,
+.add textarea:focus,
+.add select:focus {
+  border-color: #007bff;
+}
+
+/* Category and Price wrapper */
+.add-category-price {
+  display: flex;
+  gap: 20px;
+}
+
+/* Select */
+.add select {
+  background: #fff;
+  cursor: pointer;
+}
+
+/* Button */
+.add button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add button:hover {
+  background: #0056b3;
+}
