@@ -1,0 +1,130 @@
+bcrypt@6.0.0
+├── body-parser@2.2.0
+├── cors@2.8.5
+├── dotenv@17.0.1
+├── express@5.1.0
+├── jsonwebtoken@9.0.2     
+├── mongoose@8.16.1        
+├── multer@2.0.1
+├── nodemon@3.1.10
+├── stripe@18.3.0
+└── validator@13.15.15
+nodemon
+
+Dependencies & Their Use
+🔑 1. bcrypt@6.0.0
+
+Used for password hashing & security.
+
+When a user signs up, instead of storing plain text password, you hash it with bcrypt.
+
+Example:
+
+const bcrypt = require("bcrypt");
+const hash = await bcrypt.hash("mypassword", 10);
+
+📦 2. body-parser@2.2.0
+
+Middleware to parse incoming request body (form data, JSON).
+
+Example: When someone submits a form, body-parser helps Express read the data.
+
+Example:
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+🌐 3. cors@2.8.5
+
+Stands for Cross-Origin Resource Sharing.
+
+It allows your backend API to be accessed from a different domain/frontend.
+
+Example: React app (http://localhost:3000
+) calling Express API (http://localhost:5000
+).
+
+const cors = require("cors");
+app.use(cors());
+
+⚙️ 4. dotenv@17.0.1
+
+Helps manage environment variables securely.
+
+Instead of hardcoding secrets (like DB passwords, API keys), you keep them in a .env file.
+
+require("dotenv").config();
+const PORT = process.env.PORT;
+
+🚀 5. express@5.1.0
+
+The main web framework for Node.js.
+
+Used to build APIs and web apps easily.
+
+Example:
+
+const express = require("express");
+const app = express();
+app.get("/", (req, res) => res.send("Hello World"));
+
+🔒 6. jsonwebtoken@9.0.2
+
+Used for JWT authentication.
+
+Lets you create tokens when a user logs in, and verify them later for secure access.
+
+const jwt = require("jsonwebtoken");
+const token = jwt.sign({ id: user._id }, "secretkey");
+
+🐹 7. mongoose@8.16.1
+
+ODM (Object Data Modeling) library for MongoDB.
+
+Helps you define schemas, models, and easily interact with MongoDB database.
+
+const mongoose = require("mongoose");
+const User = mongoose.model("User", { name: String, email: String });
+
+📂 8. multer@2.0.1
+
+Middleware for file uploads (like images, PDFs).
+
+Example: Uploading profile picture in a user app.
+
+const multer = require("multer");
+const upload = multer({ dest: "uploads/" });
+app.post("/upload", upload.single("file"), (req, res) => {
+  res.send("File uploaded");
+});
+
+🔁 9. nodemon@3.1.10
+
+Development tool that automatically restarts server when file changes.
+
+Saves you from manually stopping & restarting Node.js.
+
+nodemon server.js
+
+💳 10. stripe@18.3.0
+
+Stripe payment gateway integration.
+
+Lets you accept payments online (cards, UPI, wallets).
+
+Example:
+
+const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
+const payment = await stripe.paymentIntents.create({
+  amount: 1000,
+  currency: "inr",
+});
+
+✅ 11. validator@13.15.15
+
+Library to validate and sanitize data (like emails, phone numbers, URLs).
+
+Example:
+
+const validator = require("validator");
+console.log(validator.isEmail("test@gmail.com")); // true
