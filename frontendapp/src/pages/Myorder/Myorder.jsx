@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useContext } from "react";
 import axios from "axios";
 import { StoreContext } from "../../context/StoreContext.jsx";
-import "./myorder.css";
+import "./Myorder.css";
 
 const Myorder = () => {
   const { url, token } = useContext(StoreContext);
@@ -113,3 +113,4 @@ const Myorder = () => {
 };
 
 export default Myorder;
+
