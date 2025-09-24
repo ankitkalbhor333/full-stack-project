@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
-import { StoreContext } from "../../context/storecontext.jsx";
+import { StoreContext } from "../../context/StoreContext.jsx";
 import Rating from "./Rating.jsx";
 import ToastNotification from "../notification/ToastNotification.jsx";
 import "./fooditem.css";
@@ -67,3 +67,4 @@ const Fooditem = ({ id, name, price, description, image }) => {
 };
 
 export default Fooditem;
+
