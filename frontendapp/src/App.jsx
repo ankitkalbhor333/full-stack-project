@@ -16,7 +16,7 @@ import Profile from './pages/profile/Profile.jsx';
 import ContactUs from "./component/contact/ContactUs.jsx";
 import Appdowload from "./component/appdowload/Appdowload.jsx";
 import Menuseparte from "./pages/Menuseparte.jsx";
-import Verify from "./pages/Verify/verify.jsx";
+import Verify from "./pages/Verify/Verify.jsx";
 import Myorder from "./pages/Myorder/Myorder.jsx";
 const App = () => {
   const [showLogin, setShowLogin] = useState(false);
