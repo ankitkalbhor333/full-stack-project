@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import "./fooddisplay.css";
-import { StoreContext } from "../../context/storecontext.jsx";                
+import { StoreContext } from "../../context/StoreContext.jsx";                
 import Fooditem from "../fooditem/Fooditem.jsx";
 
 const Fooddisplay = ({ category }) => {
@@ -35,3 +35,4 @@ const Fooddisplay = ({ category }) => {
 };
 
 export default Fooddisplay;
+
