@@ -1,0 +1,60 @@
+.profile-form-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #fffaf5;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  font-family: 'Outfit', sans-serif;
+}
+
+.profile-form-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #16a34a;
+  margin-bottom: 1.5rem;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.multifield {
+  display: flex;
+  gap: 1rem;
+}
+
+.multifield input {
+  flex: 1;
+}
+
+input {
+  padding: 0.7rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.2s ease;
+}
+
+input:focus {
+  border-color: #16a34a;
+  outline: none;
+}
+
+button {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #15803d, #166534);
+  transform: translateY(-2px);
+}

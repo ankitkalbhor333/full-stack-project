@@ -1,0 +1,59 @@
+.order-item-card {
+  background: #fffaf5;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  font-family: 'Outfit', sans-serif;
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.order-status {
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+
+.order-status.pending {
+  background: #fde68a;
+  color: #92400e;
+}
+
+.order-status.completed {
+  background: #bbf7d0;
+  color: #15803d;
+}
+
+.order-status.cancelled {
+  background: #fecaca;
+  color: #b91c1c;
+}
+
+.order-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 0.6rem;
+  background: #fff;
+  border-radius: 6px;
+}
+
+.order-total {
+  text-align: right;
+  font-size: 1.1rem;
+  color: #16a34a;
+}

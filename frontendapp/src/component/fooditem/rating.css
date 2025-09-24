@@ -1,0 +1,19 @@
+.rating {
+  display: flex;
+  gap: 2px; /* smaller gap between stars */
+  font-size: 0.9rem; /* smaller overall size */
+}
+
+.star {
+  cursor: pointer;
+  color: #e4e5e9;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.star.filled {
+  color: #ffc107;
+}
+
+.star:hover {
+  transform: scale(1.1); /* small hover scale */
+}

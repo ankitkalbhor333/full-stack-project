@@ -1,0 +1,62 @@
+/* ===== Home Page Global Styles ===== */
+.home-page {
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== Hero Section ===== */
+.hero-section {
+  margin-top: 70px; /* in case header is sticky */
+  padding: 0;
+}
+
+/* ===== Today Menu Section ===== */
+.today-menu-section {
+  padding: 4rem 1.5rem;
+  background-color: #fffdf7;
+  text-align: center;
+}
+
+/* ===== Subscription Plans Strip ===== */
+.subscription-plans-section {
+  padding: 3rem 1.5rem;
+  background: linear-gradient(135deg, #fff7ed, #fff);
+  text-align: center;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+/* ===== Explore Menu Section ===== */
+.explore-menu-section {
+  padding: 3rem 1.5rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+/* ===== Food Display Section ===== */
+.food-display-section {
+  padding: 3rem 1.5rem;
+  background-color: #fefefe;
+  min-height: 500px;
+}
+
+/* ===== App Download Section ===== */
+.app-download-section {
+  padding: 4rem 1.5rem;
+  background-color: #fff3e0;
+  text-align: center;
+}
+
+/* ===== Responsive Tweaks ===== */
+@media (max-width: 768px) {
+  .today-menu-section,
+  .subscription-plans-section,
+  .explore-menu-section,
+  .food-display-section,
+  .app-download-section {
+    padding: 2rem 1rem;
+  }
+}

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
+
+.contact-page {
+  font-family: 'Outfit', sans-serif;
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-page h1 {
+  font-size: 2.5rem;
+  color: #16a34a;
+  margin-bottom: 1rem;
+}
+
+.contact-description {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2.5rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: #fefaf5;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.8rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #16a34a;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+button {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #15803d, #166534);
+  transform: translateY(-2px);
+}
+
+.contact-info {
+  margin-top: 3rem;
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+.contact-info h3 {
+  color: #16a34a;
+  margin-bottom: 1rem;
+}

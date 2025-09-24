@@ -1,0 +1,19 @@
+.order-history-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: 'Outfit', sans-serif;
+}
+
+.order-history-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #16a34a;
+  margin-bottom: 1.5rem;
+}
+
+.order-history-container p {
+  text-align: center;
+  font-size: 1rem;
+  color: #888;
+}

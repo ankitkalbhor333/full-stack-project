@@ -1,0 +1,134 @@
+.food-item-card {
+  background: rgba(225, 240, 222, 0.8);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  margin-bottom: 2rem;
+  transition: transform 0.2s ease;
+  position: relative;
+}
+
+.food-item-card:hover {
+  transform: translateY(-3px);
+}
+
+/* Image container */
+.food-item-img-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.food-item-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px 12px 0 0;
+}
+
+/* Floating Add Icon */
+.add-icon {
+  position: absolute;
+  
+  top: 10px;
+  right: 10px;
+  width: 29px;
+  height: 29x;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  z-index: 5;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.add-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Counter (red/green) */
+.food-item-counter {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 4px 8px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 5;
+}
+
+.counter-icon {
+  width: 29px;
+  height: 29px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.counter-icon:hover {
+  transform: scale(1.2);
+}
+
+.counter-icon.red {
+  filter: brightness(0.8) saturate(2) sepia(0.8) hue-rotate(0deg);
+}
+
+.counter-icon.green {
+  filter: brightness(0.8) saturate(2) sepia(0.8) hue-rotate(100deg);
+}
+
+.food-item-counter p {
+  margin: 0;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Info Section */
+.food-item-info {
+  padding: 1rem;
+}
+
+.food-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.food-item-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #16a34a;
+}
+
+.food-item-description {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.food-item-price {
+  font-weight: 600;
+  color: #ff6600;
+  margin-bottom: 0.5rem;
+}
+
+/* Button */
+.menu-button {
+  display: inline-block;
+  text-align: center;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.menu-button:hover {
+  background: linear-gradient(135deg, #15803d, #166534);
+  transform: translateY(-1px);
+}

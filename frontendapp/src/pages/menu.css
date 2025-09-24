@@ -1,0 +1,45 @@
+.menu-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  animation: slideDownFade 0.8s ease forwards; /* Animate on load */
+  opacity: 0; /* Start hidden */
+  transform: translateY(-50px); /* Start slightly above */
+}
+
+/* Animation keyframes */
+@keyframes slideDownFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Section styles */
+.menu-explore-section,
+.menu-food-display-section {
+  margin-bottom: 3rem;
+  padding: 1rem;
+  background: #fffaf5;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Section titles */
+.menu-explore-section h2,
+.menu-food-display-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #16a34a;
+  text-align: center;
+}
+
+/* Smooth scroll anchor for Exploremenu */
+html {
+  scroll-behavior: smooth;
+}
